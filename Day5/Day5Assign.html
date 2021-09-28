@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="brief description">
+    <meta name="keywords" content="Important words">
+    <meta name="author" content="Author Name">
+    <title>Day5 </title>
+    <style>
+        a:hover::after {
+            content: "-   After";
+            color: green;
+            background-color: aqua;
+         }
+
+        a:hover::before {
+            content: "Before -  ";
+            color: green;
+            background-color: aqua;
+         }
+
+        .firstLine::before {
+        content: open-quote;
+        color: red;
+        font-size: 25px;
+        }
+        .firstLine::after {
+        content: "Paragraph Closed";
+        background-color: yellow;
+        }
+
+        .firstLine::first-line {
+        color: green;
+        font-variant: small-caps;
+        font-weight: 600;
+        background-color: aqua;
+        }
+
+        .firstLetter::first-letter {
+        color: green;
+        font-size: xx-large;
+        font-weight: 600;
+        background-color: aqua;
+        }
+
+        .selectText::selection {
+        color: red;
+        background: yellow;
+        }
+
+        h1{
+            border-top: 1px solid black;
+            margin-top: 30px;
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>::before && ::after </h1>
+    <a href="#" > Hover here and you will see before and after text </a><br>
+
+    <h1>Firstline</h1>
+    <p class="firstLine">People bring an idol of Lord Ganesha to their home and worship it during the festival. When the festival is over, the idol is immersed in a river or any other water body with a lot of fanfare. The immersion signals the return of the Ganesha to his abode after staying with his devotees for 10 days. Ganesha is also known as Vinayak and Vighneshwara.</p>
+
+    <h1>First-Letter</h1>
+    <p class="firstLetter">People bring an idol of Lord Ganesha to their home and worship it during the festival. When the festival is over, the idol is immersed in a river or any other water body with a lot of fanfare. The immersion signals the return of the Ganesha to his abode after staying with his devotees for 10 days. Ganesha is also known as Vinayak and Vighneshwara.</p>
+
+    <h1>Selection Class</h1>
+    <p class="selectText">People bring an idol of Lord Ganesha to their home and worship it during the festival. When the festival is over, the idol is immersed in a river or any other water body with a lot of fanfare. The immersion signals the return of the Ganesha to his abode after staying with his devotees for 10 days. Ganesha is also known as Vinayak and Vighneshwara.</p>
+</body>
+</html>
+

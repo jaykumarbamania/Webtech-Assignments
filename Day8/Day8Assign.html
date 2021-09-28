@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="brief description">
+    <meta name="keywords" content="Important words">
+    <meta name="author" content="Author Name">
+    <title>JS - validations </title>
+    <style>
+        #count{
+            
+            border: 2px solid red;
+            background-color: aquamarine;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button  onkeydown="onKeyDown()" onkeyup="onKeyUp()">press any key to display image</button>
+    <div id="count"></div>
+    <script>
+        
+        function onKeyUp(){
+            let count = document.getElementById("count")
+            count.style.display="none"
+        }
+
+        function onKeyDown(){
+            let count = document.getElementById("count")
+            count.style.display="block"
+            count.style.height = "500px"
+            // count.style.width = "500px"
+            // count.style.transition="width 6s 2s ease-in, height 5s 2s linear"
+            // let intCount = parseInt(count)
+            // intCount -= 1
+            // document.getElementById("count").innerHTML = intCount
+        }
+
+    </script>
+</body>
+</html>
+

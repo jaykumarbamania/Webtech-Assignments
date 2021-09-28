@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="brief description">
+    <meta name="keywords" content="Important words">
+    <meta name="author" content="Author Name">
+    <title>Day4-Assignment </title>
+    <style>
+        .blocks{
+            height: 300px;
+            width: 500px;
+            border: 1px solid black;
+            color: rgb(26, 26, 21);
+        }
+        #block1{
+            background: repeating-linear-gradient(-45deg, blue, red 25%) ;
+        }
+        #block2{
+            background: repeating-linear-gradient(to left top, blue, red 20px) ;
+        }
+        #block3{
+            background: repeating-linear-gradient(1turn, blue, green 40%, red 40% , orange  90%);
+        }
+        #block4{
+            background: repeating-linear-gradient(to right, red 0%, green 10%, red 20%);
+        }
+        #block5{
+            /* background-image: repeating-linear-gradient(0deg,
+                            transparent 0 20px,
+                            black 20px 40px); */
+        /* background-image: repeating-linear-gradient(-45deg,
+                        
+                        transparent 20px,
+                        black 50px,
+                        black 70px); */
+            background: repeating-linear-gradient(0deg, transparent, #3f87a6 20px);
+        }
+
+        /* Border-Image */
+        #imgdiv1{
+            border: 20px solid transparent;
+            padding: 15px;
+            border-image: url("images/bgimage.jpg") 30% round;
+        }
+        #imgdiv2{
+            border: 20px solid transparent;
+            padding: 15px;
+            border-image: url("images/bgimage.jpg") 50 stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1>Linear Gradients</h1>
+    <h2>Repeating Gradients</h2>
+    <div id="block1" class="blocks">
+        
+        <h3>tilted 45 degrees,
+            starting blue and finishing red, repeating 4 times</h3>
+    </div>
+    <hr>
+    <div id="block2" class="blocks">
+        
+        <h3>bottom right to the top left,
+            starting blue and finishing red, repeating every 20px</h3>
+    </div>
+    <hr>
+    <div id="block3" class="blocks">
+        
+        <h3>bottom to top,
+            starting blue, turning green after 40%,
+            starting red at 40%, turning orange after 90%. <b>This gradient is repeating because
+            the last color stop to 90%</b></h3>
+    </div>
+    <hr>
+    <div id="block4" class="blocks">
+        
+        <h3>repeating five times, going from the left to right,
+            starting red, turning green, and back to red</h3>
+    </div>
+    <hr>
+    <div id="block5" class="blocks">
+        
+        <h3></h3>
+    </div>
+    <hr>
+    <br>
+    <h1>Border Image property </h1>
+    <img src="images/bgimage.jpg" height="100" alt="">
+    <div id="imgdiv1">
+        Here, the image tiles to fill the area. The image is rescaled if necessary, to avoid dividing tiles.
+    </div>
+    <br>
+    <div id="imgdiv2">
+        Here, the image tiles to fill the area. The image is rescaled if necessary, to avoid dividing tiles.
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery-Assign 2</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        .imgContainer{
+            display: flex;
+            margin: 20px;
+            
+        }
+        .imgContainer > .imgClass{
+            height: 300px;
+            width: 300px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Zoom in and Zoom out the image using jquery</h1>
+    <button id="in">+</button>
+    <button id="out">-</button>
+
+    <div class="imgContainer">
+        <img id="image" class="imgClass" src="https://www.bing.com/th?id=OIP.1YM53mG10H_U25iPjop83QHaEo&w=218&h=136&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" alt="" >
+    </div>
+
+    <h1>ImageSlideshow in jquery</h1>
+    <div class="imgContainer">
+        <img id="image" class="imgClass" src="https://www.bing.com/th?id=OIP.1YM53mG10H_U25iPjop83QHaEo&w=218&h=136&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" alt="" >
+        <img id="image" class="imgClass" src="https://www.bing.com/th?id=OIP.X_65uIJkSF8bJl_zyU4twgHaEo&w=219&h=136&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" alt="" >
+        <img id="image" class="imgClass" src="https://www.bing.com/th?id=OIP.0VtFarqAxKUjzx9tMdzn6AHaFj&w=167&h=133&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" alt="" >
+        <img id="image" class="imgClass" src="https://www.bing.com/th?id=OIP.UYV_bihup-y039M8_Dk0KQHaFP&w=177&h=133&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" alt="" >
+        <img id="image" class="imgClass" src="https://www.bing.com/th?id=OIP.jpLd-_FFm5nktmj6TtNtHAHaFj&w=189&h=137&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" alt="" >
+    </div>
+    <button id="left"> < </button>
+    <button id="right"> > </button>
+    <div class="imgContainer">
+        <img id="image1" class="imgClass" src="" alt="" >
+    </div>
+
+    <script src="js/JqueryAssign2.js"></script>
+</body>
+</html>

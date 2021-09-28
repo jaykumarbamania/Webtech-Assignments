@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="brief description">
+    <meta name="keywords" content="Important words">
+    <meta name="author" content="Author Name">
+    <title>Jquery-Assign </title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <style>
+        .imgContainer{
+            display: flex;
+            margin: 20px;
+            
+        }
+        .imgContainer > .imgClass{
+            height: 300px;
+            width: 300px;
+            
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="Hide Images" id="hideBtn">
+    <div class="imgContainer">
+        <div id="img1" class="imgClass">
+            <h1>Img 1</h1>
+            <img  src="https://www.bing.com/th?id=OIP.1YM53mG10H_U25iPjop83QHaEo&w=218&h=136&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" alt="" >
+        </div>
+        <div id="img2" class="imgClass">
+            <h1>Img 2</h1>
+            <img  src="https://www.bing.com/th?id=OIP.X_65uIJkSF8bJl_zyU4twgHaEo&w=219&h=136&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" alt="" >
+        </div>
+        <div id="img3" class="imgClass">
+            <h1>Img 3</h1>
+            <img  src="https://www.bing.com/th?id=OIP.Z3iF66QpQVHe8HkLPj-RggHaEo&w=219&h=136&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=22" alt="" >
+        </div>
+    </div>
+
+    <button id="fadeBtn">Fadeto</button>
+    <input type="text" value="0.8" id="opacityInp">
+    <div class="imgContainer">
+        <div id="img4" class="imgClass">
+            <h1>Img 4</h1>
+            <img  src="https://www.bing.com/th?id=OIP.1YM53mG10H_U25iPjop83QHaEo&w=218&h=136&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" alt="" >
+        </div>
+        <div id="img5" class="imgClass">
+            <h1>Img 5</h1>
+            <img  src="https://www.bing.com/th?id=OIP.X_65uIJkSF8bJl_zyU4twgHaEo&w=219&h=136&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" alt="" >
+        </div>
+        <div id="img6" class="imgClass">
+            <h1>Img 6</h1>
+            <img  src="https://www.bing.com/th?id=OIP.Z3iF66QpQVHe8HkLPj-RggHaEo&w=219&h=136&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=22" alt="" >
+        </div>
+    </div>
+
+    <script src="js/JqueryAssign.js"></script>
+</body>
+</html>

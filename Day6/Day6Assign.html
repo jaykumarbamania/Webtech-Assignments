@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="brief description">
+    <meta name="keywords" content="Important words">
+    <meta name="author" content="Author Name">
+    <title>Day6 </title>
+    <style>
+        body{
+            margin:0;
+            
+        }
+
+        /* bydefault grow property in flex is 0 */
+        .grow-container{
+            width: 100%;
+            background-color: aquamarine;
+            display: flex; 
+            flex-direction: row;
+        }
+
+        .flex-grow{
+            width: 50px;
+            background-color: burlywood;
+            height:20px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .grow1{
+            flex-grow: 2;
+        }
+        .grow2{
+            flex-grow: 0;
+        }
+        .grow3{
+            flex-grow: 2;
+        }
+        .grow4{
+            flex-grow: 3;
+        }
+        .grow5{
+            flex-grow: 4;
+        }
+
+        /* bydefault shrink property in flex is 1 */
+
+        .shrink-container{
+            width: 100%;
+            height: 100px;
+            background-color: aquamarine;
+            display: flex; 
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .flex-shrink{
+            width: 200px;
+            background-color: burlywood;
+            height:20px;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        
+        .shrink1{
+            flex-shrink: 1;
+        }
+        .shrink2{
+            flex-shrink: 2;
+        }
+        .shrink3{
+            flex-shrink: 3;
+        }
+        .shrink4{
+            flex-shrink: 0;
+        }
+
+        /* Alignment of Individual element => align-self : 
+                auto,flex-start,flex-end,center,stretch,baseline */
+
+        .alignSelf-container{
+            width: 100%;
+            height: 300px;
+            background-color: aquamarine;
+            display: flex; 
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .flex-alignself{
+            width: 200px;
+            background-color: burlywood;
+            height:50px;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .alignselfStart{
+            align-self: flex-start;
+        }
+
+        .alignselfCenter{
+            align-self: center;
+        }
+
+        .alignselfEnd{
+            align-self: flex-end;
+        }
+
+        .alignselfBaseline{
+            align-self: baseline;
+        }
+
+        .alignselfAuto{
+            align-self: auto;
+        }
+
+        .alignselfStretch{
+            align-self: stretch;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flex Grow property</h1>
+    <h2>bydefault grow property in flex is 0</h2>
+    <h3>Size of 1st and 3rd Element is same, because both have flex-grow : 2</h3>
+    <div class="grow-container">
+        <div class="flex-grow grow1">
+            1
+        </div>
+        <div class="flex-grow ">
+            2
+        </div>
+        <div class="flex-grow grow3">
+            3
+        </div>
+        <div class="flex-grow ">
+            4
+        </div>
+        <div class="flex-grow ">
+            5
+        </div>
+    </div>
+    <hr>
+    <h3>element 5 will grow 4 times more than 1st element</h3>
+    <div class="grow-container">
+        <div class="flex-grow ">
+            1
+        </div>
+        <div class="flex-grow grow2">
+            2
+        </div>
+        <div class="flex-grow ">
+            3
+        </div>
+        <div class="flex-grow ">
+            4
+        </div>
+        <div class="flex-grow grow5">
+            5
+        </div>
+    </div>
+    <hr>
+    <h1>Flex Shrink property</h1>
+    <h2>bydefault shrink property in flex is 1</h2>
+    <h2>Shrink will not exceed the width of an element</h2>
+    <h3>Element 4 will not shrink, because shrink is given 0</h3>
+    <div class="shrink-container">
+        <div class="flex-shrink ">
+            1
+        </div>
+        <div class="flex-shrink  ">
+            2
+        </div>
+        <div class="flex-shrink ">
+            3
+        </div>
+        <div class="flex-shrink shrink4">
+            4
+        </div>
+    </div>
+    <hr>
+    <h3>shrinking of 1st and 3rd Element is same, because both have flex-shrink : 3</h3>
+    <div class="shrink-container">
+        <div class="flex-shrink shrink3">
+            1
+        </div>
+        <div class="flex-shrink shrink1 ">
+            2
+        </div>
+        <div class="flex-shrink shrink3">
+            3
+        </div>
+        <div class="flex-shrink shrink1">
+            4
+        </div>
+    </div>
+
+    <br>
+    <h1>Align-Self property</h1>
+    <div class="alignSelf-container">
+        <div class="flex-alignself alignselfStart">
+            start
+        </div>
+        <div class="flex-alignself alignselfEnd ">
+            end
+        </div>
+        <div class="flex-alignself alignselfCenter">
+            center
+        </div>
+        <div class="flex-alignself alignselfBaseline">
+            Baseline
+        </div>
+        <div class="flex-alignself alignselfAuto">
+            Auto
+        </div>
+        <div class="flex-alignself alignselfStretch">
+            Stretch
+        </div>
+    </div>
+</body>
+</html>
+

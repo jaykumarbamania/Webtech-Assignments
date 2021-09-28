@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="brief description">
+    <meta name="keywords" content="Important words">
+    <meta name="author" content="Author Name">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>JS-Assignments </title>
+    <style>
+        .result{
+            color: red;
+            font-size: 2.5rem;
+            margin: 10px;
+            font-weight: 600px;
+        }
+        .result::before{
+            content: 'Ans :- ';
+        }
+        .row{
+            display: flex;
+        }
+        #content1, #content2{
+            border : 3px solid red;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div id="task1">
+        <h1>1) Displaying odd numbers from 1 to 20</h1>
+        <button onclick="oddNums()">Display Odd Nums</button>
+        <br>
+        <div class="result" id="display1"></div>
+    </div>
+
+    <div id="task2">
+        <h1>2) 1 to 20 : display all prime numbers</h1>
+        <input type="text" name="primeNos" id="primeNos" value="20" onblur="primeNumbers(primeNos.value)">
+        
+        <br>
+        <div class="result" id="display2"></div>
+    </div>
+
+    <div id="task3">
+        <h1>3) Displaying Fibonacci</h1>
+        <input type="text" name="series" id="fseries" onblur="fibonacciSeries(fseries.value)">
+        
+        <br>
+        <div class="result" id="display3"></div>
+    </div>
+
+    <div id="task4">
+        <h1>4) Take number as input and reverse its digits and display</h1>
+        <input type="number" name="reverse" id="reverse" onchange="reverseDigits(reverse.value)">
+        
+        <br>
+        <div class="result" id="display4"></div>
+    </div>
+
+    <div id="task7">
+        <h1>4) On button click inner contents of first box should be copied and pasted in 2nd box</h1>
+        <div class="row">
+            <section id="content1">
+                <b>Lord Ganesha</b><br>
+                <i>This year, Ganesh Chaturthi was be celebrated on Friday, September 10.</i>
+            </section>
+            <section id="content2">
+    
+            </section>
+        </div>
+        <br>
+        <button onclick="CopyContent()">Copy content1 to content2 </button>
+    </div>
+
+    <div id="task8">
+        <h1>4) Filter: salaries < 80000 : new array of all matching records</h1>
+        <div id="InitialFilter"></div>
+        <br>
+        <button onclick="filterFunc()">Filter </button>
+        <div class="result" id="display8"></div>
+    </div>
+
+    <div id="task9">
+        <h1>4) Find : salaries < 80000 : single matching record(var)</h1>
+        <div id="InitialFind"></div>
+        <br>
+        <button onclick="findFunc()">Find </button>
+        <div class="result" id="display9"></div>
+    </div>
+
+    <div id="task10">
+        <h1>4) Map : salary/2= new array of new records</h1>
+        <div id="InitialMap"></div>
+        <br>
+        <button onclick="mapFunc()">Map </button>
+        <div class="result" id="display10"></div>
+    </div>
+
+    <div id="task11">
+        <h1>4) Reduce :sum of array elements :return single result</h1>
+        <div id="InitialReduce"></div>
+        <br>
+        <button onclick="reduceFunc()">Reduce </button>
+        <div class="result" id="display11"></div>
+    </div>
+
+<script src="js/Assignment1.js"></script>
+</body>
+</html>
+
